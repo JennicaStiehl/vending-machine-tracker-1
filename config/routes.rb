@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   resources :owners do
     resources :machines, only: [:index]
   end
-
+  resources :snacks, only: [:show]
   resources :machines, only: [:show]
 end
